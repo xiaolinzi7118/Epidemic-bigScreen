@@ -95,6 +95,83 @@
     }
     > .section4 {
       grid-area: box4;
+      .chart{
+        height: px(800);
+      }
+      .text1 {
+        font-size: px(8);
+        position: absolute;
+        bottom: 2%;
+        left: 3%;
+      }
+      .text2 {
+        font-size: px(8);
+        position: absolute;
+        bottom: 2%;
+        right: 3%;
+      }
+      > .ring {
+        border: 1px solid #0c2939;
+        position: absolute;
+        bottom: 6%;
+        left: 4%;
+        width: px2(32);
+        height: px2(32);
+        border-bottom: none;
+        border-radius: 50%;
+        overflow: hidden;
+        animation: spin infinite 5s linear;
+        > .radar {
+          border: 2px solid #103142;
+          position: absolute;
+          width: px2(27);
+          height: px2(27);
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: px2(14);
+            height: px2(14);
+            border: 2px solid #082132;
+            border-radius: 50%;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: px2(1);
+            height: px2(12);
+            z-index: 1;
+            background: #007cc0;
+            border-radius: 50%;
+            box-shadow: 0 0 5px 1px #0094e4,
+            -3px -10px 5px 1px #0094e4,
+            -7px -15px 10px 1px #0094e4,
+            -3px -3px 10px 1px #0094e4,
+            -7px -7px 20px 1px #0094e4,
+            -11px -11px 30px 1px #0094e4,
+            -11px -11px 40px 1px #0094e4,
+            -11px -11px 30px 1px #0094e4,
+            -11px -11px 30px 1px #0094e4;
+          }
+        }
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
     }
     > .section5 {
       grid-area: box5;

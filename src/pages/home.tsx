@@ -3,7 +3,8 @@ import './home.scss';
 import { Chart1 } from '../components/chart1';
 import { Chart2 } from '../components/chart2';
 import { Chart3 } from '../components/chart3';
-import { Chart7 } from '../components/chart7'
+import { Chart4 } from '../components/chart4';
+import { Chart7 } from '../components/chart7';
 
 export const Home = () => {
 
@@ -24,7 +25,12 @@ export const Home = () => {
                 <section className="bordered section3">
                     <Chart3 />
                 </section>
-                <section className="bordered section4"></section>
+                <section className="bordered section4">
+                    <Chart4 />
+                    <div className="ring">
+                        <div className="radar" />
+                    </div>
+                </section>
                 <section className="bordered section5"></section>
                 <section className="bordered section6"></section>
                 <section className="bordered section7">
