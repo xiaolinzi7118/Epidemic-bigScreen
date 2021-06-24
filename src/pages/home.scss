@@ -116,13 +116,39 @@
         border: 1px solid #0a1b3a;
         background: rgba($color: #0a1b3a, $alpha: 0.5);
         border-radius: 4px;
-        font-size: px(22);
+        font-size: px(24);
         line-height: px(24);
         padding: px(28) px(28);
       }
       .chart-content{
         flex-grow: 1;
         width: 100%;
+      }
+    }
+    .chart3{
+      > table {
+        padding: 0 px(24);
+        width: 100%; table-layout: fixed;
+        margin-top: px(50);
+        border-collapse: collapse;
+        th, td {
+          border: 1px solid #1a3671;
+        }
+        thead {
+          th {
+            height: px(70);
+            box-shadow: inset 0 0 px(60) 0 #1f3d85;
+          }
+        }
+        tbody {
+          td {height: px(50); width: px(84);
+            background: #1c2456;
+          }
+
+        }
+        .danger{
+          color: #ef6666;
+        }
       }
     }
   }
