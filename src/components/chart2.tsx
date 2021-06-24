@@ -79,6 +79,10 @@ export const Chart2 = () => {
             <h2>各省市境外本土病例统计对比</h2>
             <div ref={divRef} className="chart-content">
             </div>
+            <div className="legend">
+                <span className="first" /> 境外输入
+                <span className="second" /> 本土案例
+            </div>
         </div>
     );
 };
