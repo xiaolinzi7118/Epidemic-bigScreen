@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import * as echarts from 'echarts';
+import { px } from '../shared/px';
 
-const px = (n) => n / 2420 * (window as any).pageWidth;
+
 export const Chart1 = () => {
     const divRef = useRef(null);
     useEffect(() => {
@@ -77,9 +78,9 @@ export const Chart1 = () => {
     }, []);
 
     return (
-        <div className="chart1">
+        <div className="chart">
             <h2>各省市现有确诊统计</h2>
-            <div ref={divRef} className="chart">
+            <div ref={divRef} className="chart-content">
             </div>
         </div>
     );
