@@ -1,4 +1,3 @@
-  
 @import "helper";
 body {
   margin: 0;
@@ -18,5 +17,18 @@ code {
 *::after {box-sizing: border-box;}
 body {
   font-family: $font-hei;
+  font-size: 16px;
+  background: url(../images/bg.png);
+}
+
+#root {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.App {
+  flex: 1
+}
+h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }

@@ -1,2 +1,111 @@
-  
 @import "../shared/helper";
+
+.home {
+  width: px(2400);
+  height: px(1350);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background: rgba($color: #000, $alpha: 0.5);
+  box-shadow: 0 0 8px 0 rgba(71, 86, 129, 0.6),
+      0 2px 4px 0 rgba(71, 86, 129, 0.5);
+  > header {
+    height: px(80);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: px(80);
+    padding: 0 px(40);
+    background: rgba($color: #0a1b3a, $alpha: 0.5);
+    border-bottom: 1px solid #0a1b3a;
+    .title{
+      font-size: px(40);
+      font-weight: 600;
+      background-image: -webkit-linear-gradient(bottom, #18b0ff, #b2dafd,#fff); 
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+    }
+  }
+  > main {
+    padding-top: px(30);
+    height: px(1270);
+    display: grid;
+    grid-template:
+      "box1 box4 box6" 1fr
+      "box1 box4 box6" 1fr
+      "box2 box4 box6" 1fr
+      "box2 box4 box7" 1fr
+      "box3 box5 box7" 1fr
+      "box3 box5 box7" 1fr / 2fr 3fr 2fr;
+    row-gap: px(28);
+    column-gap: px(28);
+    > section {text-align: center;}
+    .bordered {
+      border: 1px solid #0764bc;
+      border-radius: 4px;
+      position: relative;
+      box-shadow: 0 0 2px 0 #0e325f, inset 0 0 2px 0 #0e325f;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        border-radius: 4px;
+        box-shadow: 17px 0 0 -16px #0e325f,
+        -17px 0 0 -16px #0e325f,
+        0 17px 0 -16px #0e325f,
+        0 -17px 0 -16px #0e325f,
+        9px 0 0 -8px #0d4483,
+        -9px 0 0 -8px #0d4483,
+        0 9px 0 -8px #0d4483,
+        0 -9px 0 -8px #0d4483,;
+      }
+    }
+    > .section1 {
+      grid-area: box1;
+    }
+    > .section2 {
+      grid-area: box2;
+    }
+    > .section3 {
+      grid-area: box3;
+    }
+    > .section4 {
+      grid-area: box4;
+    }
+    > .section5 {
+      grid-area: box5;
+    }
+    > .section6 {
+      grid-area: box6;
+    }
+    > .section7 {
+      grid-area: box7;
+    }
+    .chart1 {
+      height: px(400);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        width: 100%;
+        flex-shrink: 0;
+        border: 1px solid #0a1b3a;
+        background: rgba($color: #0a1b3a, $alpha: 0.5);
+        border-radius: 4px;
+        font-size: px(22);
+        line-height: px(24);
+        padding: px(28) px(28);
+      }
+      .chart{
+        flex-grow: 1;
+        width: 100%;
+      }
+    }
+  }
+}
