@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './home.scss';
 import { Chart1 } from '../components/chart1';
 import { Chart2 } from '../components/chart2';
+import { Chart7 } from '../components/chart7'
 
 export const Home = () => {
 
@@ -23,7 +24,9 @@ export const Home = () => {
                 <section className="bordered section4"></section>
                 <section className="bordered section5"></section>
                 <section className="bordered section6"></section>
-                <section className="bordered section7"></section>
+                <section className="bordered section7">
+                    <Chart7 />
+                </section>
             </main>
         </div>
     );
