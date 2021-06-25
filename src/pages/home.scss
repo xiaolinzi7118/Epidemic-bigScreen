@@ -242,6 +242,24 @@
     }
     > .section7 {
       grid-area: box7;
+      .chart7{
+        height: px(600);
+        .chart-content{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .chart7-2{
+            height: 60%;
+            width: 70%;
+            margin: 0 auto;
+          }
+          .chart7-1{
+            height: 40%;
+            height: px(200);
+          }
+        }
+      }
     }
     .chart {
       height: px(400);
