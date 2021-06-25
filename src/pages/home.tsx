@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import './home.scss';
 import { Chart1 } from '../components/chart1';
 import { Chart2 } from '../components/chart2';
 import { Chart3 } from '../components/chart3';
 import { Chart4 } from '../components/chart4';
+import { Chart5 } from '../components/chart5';
 import { Chart7 } from '../components/chart7';
 
 export const Home = () => {
@@ -31,7 +32,9 @@ export const Home = () => {
                         <div className="radar" />
                     </div>
                 </section>
-                <section className="bordered section5"></section>
+                <section className="bordered section5">
+                    <Chart5 />
+                </section>
                 <section className="bordered section6"></section>
                 <section className="bordered section7">
                     <Chart7 />

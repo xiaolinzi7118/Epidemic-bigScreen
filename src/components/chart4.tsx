@@ -36,7 +36,7 @@ export const Chart4 = () => {
                     ],
                     label: { show: false, color: 'white' },
                     itemStyle: {
-                        areaColor: 'rgb(28, 36, 86,0.5)',
+                        areaColor: 'rgba(28, 36, 86,0.5)',
                         borderColor: '#01A7F7',
                         emphasis: {
                             label: { color: 'white' },

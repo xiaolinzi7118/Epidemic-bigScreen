@@ -55,7 +55,7 @@ export const Chart2 = () => {
                     }
                 },
                 {
-                    name: '本土输入',
+                    name: '本土案例',
                     type: 'bar',
                     data: [20, 12, 14, 1, 8, 6, 6],
                     itemStyle: {
