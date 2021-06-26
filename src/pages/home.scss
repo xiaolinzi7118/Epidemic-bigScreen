@@ -20,7 +20,7 @@
     line-height: px(80);
     padding: 0 px(40);
     background: rgba($color: #0a1b3a, $alpha: 0.5);
-    border-bottom: 1px solid #0a1b3a;
+    border-bottom: 1px solid #054c8d;
     .title{
       font-size: px(40);
       font-weight: 600;
@@ -44,27 +44,7 @@
     column-gap: px(28);
     > section {text-align: center;}
     .bordered {
-      border: 1px solid #0764bc;
-      border-radius: 4px;
       position: relative;
-      box-shadow: 0 0 2px 0 #0e325f, inset 0 0 2px 0 #0e325f;
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        border-radius: 4px;
-        box-shadow: 17px 0 0 -16px #0e325f,
-        -17px 0 0 -16px #0e325f,
-        0 17px 0 -16px #0e325f,
-        0 -17px 0 -16px #0e325f,
-        9px 0 0 -8px #0d4483,
-        -9px 0 0 -8px #0d4483,
-        0 9px 0 -8px #0d4483,
-        0 -9px 0 -8px #0d4483,;
-      }
     }
     > .section1 {
       grid-area: box1;
@@ -239,6 +219,54 @@
     }
     > .section6 {
       grid-area: box6;
+      .chart{
+        margin-top: px(10);
+        height: px(600);
+      }
+      .chart-content{
+        >ul{
+          height: 100%;
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          >li{
+            width: 33%;
+            padding: px(10) px(20);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .title-6{
+              padding: px(5) px(5);
+              box-shadow: inset 0 0 px(60) 0 #1f3d85;
+              border-radius: 4px;
+            }
+            .text-6{
+              height: 70%;
+              padding: px(20) px(20);
+              font-size: px(45);
+              line-height: 280%;
+              &.one{
+                color: #d32537;
+              }
+              &.two{
+                color: #288767;
+              }
+              &.three{
+                color: #616161;
+              }
+              &.four{
+                color: #f57f5a;
+              }
+              &.five{
+                color: #1894bf;
+              }
+              &.six{
+                color: #eaab1f;
+              }
+            }
+          }
+        }
+      }
     }
     > .section7 {
       grid-area: box7;
