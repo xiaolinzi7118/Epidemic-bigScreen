@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './home.scss';
 import { Chart1 } from '../components/chart1';
 import { Chart2 } from '../components/chart2';
@@ -7,11 +7,33 @@ import { Chart4 } from '../components/chart4';
 import { Chart5 } from '../components/chart5';
 import { Chart7 } from '../components/chart7';
 import { Chart6 } from '../components/chart6';
+import classnames from 'classnames'
 
 export const Home = () => {
+    const [see, setSee] = useState(false)
+    const [time, setTime] = useState(false)
+    const divRef = useRef(null)
+    const clickMe = (e) => {
+        if (!time) {
+            divRef.current.style.left = e.clientX + 'px';
+            divRef.current.style.top = e.clientY + 'px';
+            document.body.appendChild(divRef.current)
+            setSee(true);
+            setTime(true)
+            setTimeout(() => {
+                setSee(false);
+                setTime(false)
+            }, 1000)
+        }
 
+    }
     return (
-        <div className="home">
+        <div className="home" onClick={e => clickMe(e)}>
+            <div className={classnames('smallIcon', { 'visible': see })} ref={divRef}>
+                <svg className="icon" aria-hidden="true">
+                    <use xlinkHref="#icon-mask2"></use>
+                </svg>
+            </div>
             <header>
                 <div className='caption'>——数据来源于UC,统计截至6月26日24时</div>
                 <div className="title">全国疫情数据一览平台</div>

@@ -16,7 +16,36 @@
     }</style>`
     document.write(string)
   </script>
-  <script src="//at.alicdn.com/t/font_2634668_joazf0n7n7.js"></script>
+  <script src="//at.alicdn.com/t/font_2634668_z0q3bve4hdc.js"></script>
+  <style>
+    .smallIcon {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .smallIcon.visible {
+      display: block;
+      animation: fadeIn 1000ms;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(0%);
+      }
+
+      60% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(-80%);
+      }
+    }
+  </style>
 </head>
 
 <body>
