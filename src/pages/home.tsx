@@ -13,9 +13,17 @@ export const Home = () => {
     return (
         <div className="home">
             <header>
-                <div className="clock">时间</div>
+                <div className='caption'>——数据来源于UC,统计截至6月26日24时</div>
                 <div className="title">全国疫情数据一览平台</div>
-                <div className='info'>shengzhen</div>
+                <div className='info'>
+                    <svg className="icon" aria-hidden="true">
+                        <use xlinkHref="#icon-fixed"></use>
+                    </svg>
+                    <span> ShenZhen，28℃ </span>
+                    <svg className="icon" aria-hidden="true">
+                        <use xlinkHref="#icon-cloudy"></use>
+                    </svg>
+                </div>
             </header>
             <main>
                 <section className="bordered section1">
