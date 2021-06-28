@@ -1,10 +1,12 @@
 {
   "name": "my-bigscreen",
   "version": "0.0.0",
+  "homepage": "https://xiaolinzi7118.github.io/Epidemic-bigScreen-Website/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview"
+    "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "classnames": "^2.3.1",
